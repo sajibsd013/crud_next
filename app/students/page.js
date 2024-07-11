@@ -1,6 +1,9 @@
 import Link from "next/link";
 import getAllStudents from "@/lib/students/getAllStudent";
 import StudentDeleteButton from "@/app/components/students/StudentDeleteButton";
+import {IoMdAdd} from "react-icons/io";
+import {BiSolidEdit} from "react-icons/bi";
+import {MdOutlineRemoveRedEye} from "react-icons/md";
 
 export async function generateMetadata() {
     return {
@@ -19,8 +22,7 @@ const Students = async () => {
                 <div className='flex justify-between items-center'>
                     <h1 className="font-semibold text-3xl mb-5">Students</h1>
                     <Link href='/students/add' className="ring-2 px-3 py-1 rounded-lg">
-                        {/*<FontAwesomeIcon icon={faAdd}/>*/}
-                        Add
+                        <IoMdAdd/>
                     </Link>
                 </div>
                 <div className="overflow-scroll">
@@ -56,11 +58,11 @@ const Students = async () => {
                                             {/*</button>*/}
                                             <Link className="btn bg-green-500" href={`/students/edit/${id}`}>
                                                 {/*<FontAwesomeIcon icon={faEdit} size="1x"/>*/}
-                                                Edit
+                                                <BiSolidEdit />
                                             </Link>
                                             <Link className="btn bg-blue-500" href={`/students/${id}`}>
                                                 {/*<FontAwesomeIcon icon={faEye} size="1x"/>*/}
-                                                View
+                                                <MdOutlineRemoveRedEye />
                                             </Link>
                                         </div>
                                     </td>

@@ -18,7 +18,7 @@
 
 @layer components {
   .btn {
-    @apply border p-1 px-2 rounded-lg text-white text-sm;
+    @apply border p-1 px-2 rounded text-white text-sm;
   }
 }
 

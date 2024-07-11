@@ -1,6 +1,7 @@
 "use client"
 
 import deleteStudent from "@/lib/students/deleteStudent";
+import {CiTrash} from "react-icons/ci";
 
 const StudentDeleteButton =  ({id}) => {
 
@@ -14,7 +15,7 @@ const StudentDeleteButton =  ({id}) => {
     }
 
     return (
-        <button className="btn bg-red-600" onClick={() => onDelete()}>Delete</button>
+        <button className="btn bg-red-600" onClick={() => onDelete()}><CiTrash/></button>
 
     );
 };
