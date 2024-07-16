@@ -1,7 +1,7 @@
 "use client"
 
 import {useState} from "react";
-import StudentForm from "@/app/components/students/StudentForm";
+import StudentForm from "@/components/students/StudentForm";
 import {useRouter} from 'next/navigation'
 import addStudent from "@/lib/students/addStudent";
 

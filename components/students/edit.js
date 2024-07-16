@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import getStudent from "@/lib/students/getStudent";
 import editStudent from "@/lib/students/editStudent";
 import {useRouter} from 'next/navigation'
-import StudentForm from "@/app/components/students/StudentForm";
+import StudentForm from "@/components/students/StudentForm";
 
 const EditStudent = ({id, studentData}) => {
     const router = useRouter();
