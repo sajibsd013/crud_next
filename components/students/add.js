@@ -36,7 +36,7 @@ const AddStudent = () => {
     return (
 
         <form onSubmit={event => submitFormdata(event)}>
-            {JSON.stringify(student)}
+            {/*{JSON.stringify(student)}*/}
             <StudentForm formData={student} setFormData={changeFormdata}/>
             <button className="btn w-full bg-black text-white uppercase font-semibold">Sumbit</button>
         </form>

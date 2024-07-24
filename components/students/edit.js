@@ -52,8 +52,8 @@ const EditStudent = ({id, studentData}) => {
     return (
 
         <form onSubmit={event => submitFormdata(event)}>
-            {id}
-            {JSON.stringify(student)}
+            {/*{id}*/}
+            {/*{JSON.stringify(student)}*/}
             <StudentForm formData={student} setFormData={changeFormdata}/>
             <button className="btn w-full bg-black text-white uppercase font-semibold">Sumbit</button>
         </form>
